@@ -12,8 +12,9 @@ public class Rectangle {
     }
 
     public boolean contains(Point point) {
-        if ((point.getX() >= bottomLeftCoordinates[0] && point.getX() <= topRightCoordinates[0]) &&
-            (point.getY() >= bottomLeftCoordinates[1] && point.getY() <= topRightCoordinates[1])) {
+        boolean isInLowerBounds = point.getX() >= bottomLeftCoordinates[0] && point.getX() <= topRightCoordinates[0];
+        boolean isInUpperBounds = point.getY() >= bottomLeftCoordinates[1] && point.getY() <= topRightCoordinates[1];
+        if (isInLowerBounds && isInUpperBounds) {
             return true;
         }
         return false;
