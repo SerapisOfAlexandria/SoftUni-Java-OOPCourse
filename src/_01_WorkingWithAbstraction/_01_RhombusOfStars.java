@@ -8,40 +8,25 @@ public class _01_RhombusOfStars {
 
         Scanner scanner = new Scanner(System.in);
 
-        printRhombus(Integer.parseInt(scanner.nextLine()));
-    }
+        int n = Integer.parseInt(scanner.nextLine());
 
-    public static void printRhombus(int n) {
-        System.out.print(generateRhombusUpperPart(n));
-        System.out.print(generateRhombusLowerPart(n));
-
-    }
-
-    public static StringBuilder generateRhombusUpperPart(int n) {
-        StringBuilder rhombusUpperPart = new StringBuilder();
-        for (int i = 1; i < n + 1; i++) {
-            for (int a = 0; a < n - i; a++) {
-                rhombusUpperPart.append(" ");
-            }
-            for (int b = 0; b < i; b++) {
-                rhombusUpperPart.append("* ");
-            }
-            rhombusUpperPart.append("\n");
+        for (int i = 0; i < n; i++) {
+            printRow(n - i, i + 1);
         }
-        return rhombusUpperPart;
-    }
-
-    public static StringBuilder generateRhombusLowerPart(int n) {
-        StringBuilder rhombusLowerPart = new StringBuilder();
         for (int i = n - 1; i > 0; i--) {
-            for (int a = 0; a < n - i; a++) {
-                rhombusLowerPart.append(" ");
-            }
-            for (int b = 0; b < i; b++) {
-                rhombusLowerPart.append("* ");
-            }
-            rhombusLowerPart.append("\n");
+            printRow(n, i);
         }
-        return rhombusLowerPart;
+    }
+
+
+
+    public static void printRow(int countSpaces, int countStars) {
+        for (int spaces = 0; spaces < countSpaces - 1; spaces++) {
+            System.out.print(" ");
+        }
+        for (int stars = 0; stars < countStars; stars++) {
+            System.out.print("* ");
+        }
+        System.out.println();
     }
 }
