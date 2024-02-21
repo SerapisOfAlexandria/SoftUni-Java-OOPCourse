@@ -14,11 +14,9 @@ public class _01_RhombusOfStars {
             printRow(n - i, i + 1);
         }
         for (int i = n - 1; i > 0; i--) {
-            printRow(n, i);
+            printRow(n + 1 - i, i);
         }
     }
-
-
 
     public static void printRow(int countSpaces, int countStars) {
         for (int spaces = 0; spaces < countSpaces - 1; spaces++) {
