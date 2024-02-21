@@ -14,7 +14,7 @@ public class Main {
                 break;
             }
 
-            studentSystem.ParseCommand(input);
+            studentSystem.parseCommand(input);
         }
     }
 }
