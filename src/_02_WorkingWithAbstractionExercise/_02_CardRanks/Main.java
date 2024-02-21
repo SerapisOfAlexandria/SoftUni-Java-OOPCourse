@@ -1,4 +1,4 @@
-package _02_WorkingWithAbstractionExercise._01_CardSuits;
+package _02_WorkingWithAbstractionExercise._02_CardRanks;
 
 import java.util.Scanner;
 
@@ -10,8 +10,8 @@ public class Main {
         String input = scanner.nextLine();
 
         System.out.println(input + ":");
-        for (CardSuit card : CardSuit.values()) {
-            System.out.printf("Ordinal value: %d; Name value: %s\n", card.getPower(), card.name());
+        for (CardRank card : CardRank.values()) {
+            System.out.printf("Ordinal value: %d; Name value: %s\n", card.getOrdinalValue(), card.name());
         }
     }
 }

@@ -6,10 +6,13 @@ public enum CardSuit {
     HEARTS(2),
     SPADES(3);
 
-    int power;
+    private int power;
 
     private CardSuit(int power) {
         this.power = power;
     }
 
+    public int getPower() {
+        return power;
+    }
 }
