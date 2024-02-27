@@ -1,8 +1,6 @@
 package _02_WorkingWithAbstractionExercise._05_JedyGalaxy;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -12,12 +10,12 @@ public class Main {
 
         int rows = scanner.nextInt();
         int columns = scanner.nextInt();
+        scanner.nextLine();
         GalaxyMatrix galaxyMatrix = new GalaxyMatrix(rows, columns);
 
         int heroX, heroY;
         long heroSum = 0;
         int evilX, evilY;
-        scanner.nextLine();
 
         String command = scanner.nextLine();
 
@@ -31,7 +29,6 @@ public class Main {
             int[] evilCoordinates = Arrays.stream(scanner.nextLine().split(" "))
                     .mapToInt(Integer::parseInt)
                     .toArray();
-
             evilX = evilCoordinates[0];
             evilY = evilCoordinates[1];
 

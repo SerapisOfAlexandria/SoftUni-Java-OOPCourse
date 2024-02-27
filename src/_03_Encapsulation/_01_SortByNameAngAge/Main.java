@@ -1,4 +1,4 @@
-package _03_Encapsulation.SortByNameAngAge;
+package _03_Encapsulation._01_SortByNameAngAge;
 
 import java.io.BufferedReader;
 import java.io.IOException;
