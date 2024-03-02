@@ -1,4 +1,4 @@
-//package _04_EncapsulationExercise._04_PizzaCalories;
+package _04_EncapsulationExercise._04_PizzaCalories;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,7 @@ public class Topping {
 
     private void setWeight(double weight) {
         if (weight < 1 || weight > 50) {
-            throw new IllegalArgumentException(String.format("%s weight should be in the range [1..50]."));
+            throw new IllegalArgumentException(String.format("%s weight should be in the range [1..50].", this.toppingType));
         }
         this.weight = weight;
     }

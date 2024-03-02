@@ -1,4 +1,4 @@
-//package _04_EncapsulationExercise._04_PizzaCalories;
+package _04_EncapsulationExercise._04_PizzaCalories;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,9 @@ public class Pizza {
     private Dough dough;
     private List<Topping> toppings;
 
-    public Pizza(String name, int numOfTopping) {
+    public Pizza(String name, int numberOfTopping) {
         this.setName(name);
-        this.setToppings(numOfTopping);
+        this.setToppings(numberOfTopping);
     }
 
     private void setName(String name) {
