@@ -1,9 +1,10 @@
 package _05_Inheritance._04_StackOfStrings;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class StackOfStrings {
-    private ArrayList<String> data;
+    private List<String> data;
 
     public StackOfStrings() {
         this.data = new ArrayList<>();
