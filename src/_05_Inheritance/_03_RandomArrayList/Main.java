@@ -6,8 +6,7 @@ import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
-
-        RandomArrayList list = new RandomArrayList();
-        list.getRandomElement();
+        RandomArrayList randomArrayList = new RandomArrayList();
+        randomArrayList.getRandomElement();
     }
 }
