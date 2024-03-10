@@ -1,0 +1,5 @@
+package _08_InterfacesAndAbstractionExercise._03_BirthdayCelebrations;
+
+public interface Identifiable {
+    String getId();
+}

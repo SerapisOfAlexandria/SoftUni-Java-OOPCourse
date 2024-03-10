@@ -1,10 +1,11 @@
-package _08_InterfacesAndAbstractionExercise._02_MultipleImplementations;
+package _08_InterfacesAndAbstractionExercise._03_BirthdayCelebrations;
 
 public class Citizen implements Person, Birthable, Identifiable {
     private String name;
     private int age;
     private String id;
     private String birthDate;
+
 
     public Citizen(String name, int age, String id, String birthDate) {
         this.name = name;

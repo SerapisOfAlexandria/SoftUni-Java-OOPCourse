@@ -1,4 +1,4 @@
-//package _08_InterfacesAndAbstractionExercise._02_MultipleImplementations;
+package _08_InterfacesAndAbstractionExercise._02_MultipleImplementations;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
